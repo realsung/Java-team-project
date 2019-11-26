@@ -1,4 +1,3 @@
-package mail;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,12 +11,12 @@ public class Clickmail  extends JFrame implements ActionListener{
 		JTextField title = new JTextField(array[2],20);
 		JTextArea content = new JTextArea(array[3],10,20);
 		JScrollPane scrollPane = new JScrollPane(content);
-		JButton back = new JButton("µ¹¾Æ°¡±â");
+		JButton back = new JButton("ëŒì•„ê°€ê¸°");
 		back.addActionListener(this);
 		
-		panel.add(new JLabel("¹ŞÀºÀÌ¸ŞÀÏ"));
+		panel.add(new JLabel("ë°›ì€ì´ë©”ì¼"));
 		panel.add(recipient);
-		panel.add(new JLabel("Á¦¸ñ"));
+		panel.add(new JLabel("ì œëª©"));
 		panel.add(title);
 		panel.add(scrollPane);
 		panel.add(back);
