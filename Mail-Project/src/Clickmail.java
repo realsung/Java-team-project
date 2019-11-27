@@ -7,9 +7,14 @@ public class Clickmail  extends JFrame implements ActionListener{
 	Clickmail(String data){
 		String[] array = data.split("-");
 		JPanel panel = new JPanel(new FlowLayout());
-		JTextField recipient = new JTextField(array[1],20);
-		JTextField title = new JTextField(array[2],20);
+		JTextArea recipient = new JTextArea(array[1],1,20);
+		JTextArea title = new JTextArea(array[2],1,20);
 		JTextArea content = new JTextArea(array[3],10,20);
+		
+		recipient.setEditable(false);
+		title.setEditable(false);
+		content.setEditable(false);
+		
 		JScrollPane scrollPane = new JScrollPane(content);
 		JButton back = new JButton("돌아가기");
 		back.addActionListener(this);
